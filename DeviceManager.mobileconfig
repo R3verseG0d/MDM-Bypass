@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- MDM Settings -->
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>PayloadType</key>
+            <string>Configuration</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.example.mdm.profile</string>
+            <key>PayloadUUID</key>
+            <string>MDM-Unique-Identifier</string>
+            <!-- MDM enforcement settings -->
+            <key>allowMDMInstall</key>
+            <false/>
+        </dict>
+    </array>
+
+    <!-- Payload Dependency -->
+    <key>PayloadDependencies</key>
+    <array>
+        <dict>
+            <key>PayloadIdentifier</key>
+            <string>com.example.payload.dependency</string>
+            <key>PayloadUUID</key>
+            <string>d42fd29c-01f9-11ef-930c-325096b39f47</string>
+        </dict>
+    </array>
+
+    <!-- Post-Setup Configuration -->
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>PayloadType</key>
+            <string>Configuration</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.example.postsetup.profile</string>
+            <key>PayloadUUID</key>
+            <string>e773bbca-01f9-11ef-b93f-325096b39f47</string>
+            <key>PayloadDisplayName</key>
+            <string>Post Setup Configuration</string>
+            <key>PayloadDescription</key>
+            <string>Deez Nutz Motherfucker! You think you can stop me bitch! MDM PWNED shitface. Try me Apple and I WILL FUCK YOU UP!!!</string>
+            <!-- Block connections to apple.com and associated domains -->
+            <key>BlockIncomingConnections</key>
+            <true/>
+            <key>BlockAllOutgoingConnections</key>
+            <false/>
+            <key>Except</key>
+            <array>
+                <string>*.apple.com</string>
+                <string>*.icloud.com</string>
+                <!-- Add more exceptions if necessary -->
+            </array>
+        </dict>
+    </array>
+
+    <!-- Payload Metadata -->
+    <key>PayloadDisplayName</key>
+    <string>Device Manager</string>
+    <key>PayloadDescription</key>
+    <string>Configures device management settings and blocks MDM installations and connections to apple.com.</string>
+    <key>PayloadIdentifier</key>
+    <string>com.example.devicemanager</string>
+    <key>PayloadRemovalDisallowed</key>
+    <true/>
+    <key>PayloadScope</key>
+    <string>System</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>43dd80ca-01f6-11ef-9030-325096b39f47</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
