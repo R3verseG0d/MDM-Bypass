@@ -13,7 +13,6 @@
             <string>com.example.mdm.profile</string>
             <key>PayloadUUID</key>
             <string>MDM-Unique-Identifier</string>
-            <!-- MDM enforcement settings -->
             <key>allowMDMInstall</key>
             <false/>
         </dict>
