@@ -2,7 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <!-- MDM Settings -->
     <key>PayloadContent</key>
     <array>
         <dict>
@@ -19,8 +18,6 @@
             <false/>
         </dict>
     </array>
-
-    <!-- Payload Dependency -->
     <key>PayloadDependencies</key>
     <array>
         <dict>
@@ -30,8 +27,6 @@
             <string>d42fd29c-01f9-11ef-930c-325096b39f47</string>
         </dict>
     </array>
-
-    <!-- Post-Setup Configuration -->
     <key>PayloadContent</key>
     <array>
         <dict>
@@ -47,7 +42,6 @@
             <string>Post Setup Configuration</string>
             <key>PayloadDescription</key>
             <string>Deez Nutz Motherfucker! You think you can stop me bitch! MDM PWNED shitface. Try me Apple and I WILL FUCK YOU UP!!!</string>
-            <!-- Block connections to apple.com and associated domains -->
             <key>BlockIncomingConnections</key>
             <true/>
             <key>BlockAllOutgoingConnections</key>
@@ -61,7 +55,6 @@
         </dict>
     </array>
 
-    <!-- Payload Metadata -->
     <key>PayloadDisplayName</key>
     <string>Device Manager</string>
     <key>PayloadDescription</key>
