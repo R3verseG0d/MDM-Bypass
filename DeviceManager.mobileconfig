@@ -49,7 +49,6 @@
             <array>
                 <string>*.apple.com</string>
                 <string>*.icloud.com</string>
-                <!-- Add more exceptions if necessary -->
             </array>
         </dict>
     </array>
