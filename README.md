@@ -30,3 +30,5 @@ Now you should see in settings that the MDM profile is removed. You are not done
 Now that the current MDM profile is removed, open Apple Configurator and navigate to your iDevice. Double click on it and you should see the device info and a list of tabs on the left. Download the MDM profile from this repo. This will be your new DeviceManager.mobileconfig. Once you have that you can proceed. Click on Profiles and Add Profile. Import the MDM profile and follow the on screen instructions. You will need to install it from Settings on your iDevice (General/Profile). Click install when prompted. 
 
 This MDM profile will block the installation of any new MDM profiles including after the device reboots effectively kicking the old MDM off of the device Persistently. I also added settings to block connections to apple.com but I can still connect to apple's website. I haven't tested it with iCloud yet. I will ammend this readme when I do. 
+
+Edit: iCloud works, so you'll be able to use Apple services
